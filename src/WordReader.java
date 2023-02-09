@@ -5,7 +5,12 @@ public class WordReader
     // Instance fields
     private String valToRead;
 
-    public WordReader(String input)
+    public WordReader()
+    {
+
+    }
+
+    public void checkString(String input)
     {
         // Basic string checker logic
         // TODO: Create a dictionary of known Chinese words and their Pinyin
@@ -20,8 +25,12 @@ public class WordReader
             System.out.println("Yeah I got no clue what dat is holmes.");
         }
     }
-    public void checkString()
+    public void iterateString(String input)
     {
+        for (int i = 0; i <= input.length()-1; i++)
+        {
+            System.out.print("   " + input.charAt(i));
+        }
 
     }
 }
